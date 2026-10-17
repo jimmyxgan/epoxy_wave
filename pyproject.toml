@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "epoxy-wave-dg"
+version = "0.1.0"
+description = "GPU-capable 2D P2 DGSEM elastic-wave propagation in epoxy"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.1", "numpy>=1.24", "PyYAML>=6", "matplotlib>=3.7"]
+[project.optional-dependencies]
+test = ["pytest>=7"]
+[project.scripts]
+epoxy-wave-dg = "epoxy_wave_dg.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]

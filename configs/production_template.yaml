@@ -1,0 +1,25 @@
+# ~0.5 m propagation; refine nx,ny and time step for convergence.
+length: 1.0
+width: 0.02
+nx: 400
+ny: 12
+E: 20000000000.0
+nu: 0.3
+rho: 1900.0
+frequency: 100000.0
+decay_us: 100.0
+source_velocity_scale: 0.001
+source_x: 0.25
+source_y: 0.01
+source_sigma_x: 0.005
+source_sigma_y: 0.005
+receiver_x: 0.75
+receiver_y: 0.02
+progress_every: 100
+duration_us: 350.0
+cfl: 0.12
+snapshot_every: 100
+record_every: 10
+periodic_x: false
+damping_per_s: 0.0
+device: auto
